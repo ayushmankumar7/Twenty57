@@ -8203,7 +8203,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
         })
         client.peer = peer
     }
-
+    
     //when get answer  
     function FrontAnswer(offer){
         let peer = InitPeer('notinit')
@@ -8227,6 +8227,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
         video.srcObject = stream
         video.class = 'embed-responsive-item'
         document.querySelector('#peerDiv').appendChild(video)
+        video.play()
 
     }
 
@@ -8237,7 +8238,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
 
 
     socket.on('BackOffer', FrontAnswer)
-    socket.on('backAnswer', SignalAnswer)
+    socket.on('BackAnswer', SignalAnswer)
     socket.on('SessionActive', SessionActive)
     socket.on('CreatePeer',MakePeer)
 })
