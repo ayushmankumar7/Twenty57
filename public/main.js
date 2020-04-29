@@ -23,7 +23,6 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
         return peer
     }
     
-   
 
     //called for Peer of type 'init'
     function MakePeer(){
@@ -74,7 +73,5 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
     socket.on('BackAnswer', SignalAnswer)
     socket.on('SessionActive', SessionActive)
     socket.on('CreatePeer',MakePeer)
-    
-
 })
 .catch(err => {document.write(err)})

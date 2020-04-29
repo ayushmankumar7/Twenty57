@@ -15,10 +15,10 @@ io.on('connection', function(socket){
                 this.emit('CreatePeer')
             }
         }
-        else{
+        else
             this.emit('SessionActive')
-            clients++;
-        }
+        clients++;
+        
     })
     socket.on('Offer', SendOffer)
     socket.on('Answer', SendAnswer)
@@ -26,9 +26,8 @@ io.on('connection', function(socket){
 })
 
 function Disconnect(){
-    if(clients > 0){
-        clients--;
-    }
+    if(clients > 0)
+        clients--
 }
 
 

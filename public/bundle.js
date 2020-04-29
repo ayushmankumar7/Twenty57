@@ -8191,6 +8191,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
         })
         return peer
     }
+    
 
     //called for Peer of type 'init'
     function MakePeer(){
@@ -8203,7 +8204,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio:true})
         })
         client.peer = peer
     }
-    
+
     //when get answer  
     function FrontAnswer(offer){
         let peer = InitPeer('notinit')
