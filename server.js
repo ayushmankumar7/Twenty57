@@ -22,7 +22,7 @@ io.on('connection', function(socket){
     })
     socket.on('Offer', SendOffer)
     socket.on('Answer', SendAnswer)
-    socket.on('disconnet', Disconnect)
+    socket.on('disconnect', Disconnect)
 })
 
 function Disconnect(){
