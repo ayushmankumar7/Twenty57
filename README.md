@@ -8,3 +8,8 @@ Initial Techstack
 . CSS
 . Socket.io
 . HTML
+
+
+### npm install
+
+### npm start
