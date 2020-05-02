@@ -1,4 +1,4 @@
-/* *{
+ *{
     padding: 0;
     margin:0;
 }
@@ -7,7 +7,7 @@ body{
     background: url('assets/back.jpg');
     
 }
-
+/*
 h1{
     color: white;
     
@@ -38,6 +38,28 @@ h1{
 }
 
 .foot{
-    transform: translateY(-170%);
+    transform: translateY(-197%);
 }
 
+/* @media (min-width: 768px) { 
+    
+    .foot{
+        transform: translateY(-122%);
+    }
+ } */
+ @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .foot{
+        transform: translateY(-122%);
+    }
+
+
+    /* .embed-responsive-item{
+    position: absolute;
+    top: 39px;
+    bottom: 0;
+    left: 0;
+    width: 99%;
+    height: 68%;
+    } */
+  }
